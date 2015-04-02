@@ -1,14 +1,11 @@
 <resources>
     <string name="app_name">Assignment_1</string>
-
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="ButtonText">Next Quote</string>
-    <string name="ButtonText2">Next Quote</string>
+    <string name="button_text">Next Quote</string>
     <string-array name="quotes">
         <item>The Force is Strong with this one!</item>
         <item>May the Force be with You!</item>
         <item>Do or Do Not - There is no Try</item>
     </string-array>
-
 </resources>

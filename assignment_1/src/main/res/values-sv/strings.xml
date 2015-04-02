@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Assignment_1</string>
-    <string name="action_settings">Inställningar</string>
-    <string name="hello_world">Hej världen!</string>
-    <string name="ButtonText">Nästa Citat</string>
-    <string name="ButtonText2">Nästa Citat</string>
+<string name="app_name">Assignment_1</string>
+<string name="hello_world">Hello world!</string>
+<string name="action_settings">Inställningar</string>
+<string name="button_text">Nästa citat</string>
+<string-array name="quotes">
+    <item>The Force is Strong with this one!</item>
+    <item>May the Force be with You!</item>
+    <item>Do or Do Not - There is no Try</item>
+</string-array>
 </resources>
