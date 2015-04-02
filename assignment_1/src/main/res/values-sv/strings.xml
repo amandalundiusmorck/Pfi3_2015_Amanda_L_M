@@ -4,9 +4,10 @@
 <string name="hello_world">Hello world!</string>
 <string name="action_settings">Inställningar</string>
 <string name="button_text">Nästa citat</string>
+    <string name="random">Slumpmässigt Citat</string>
 <string-array name="quotes">
-    <item>The Force is Strong with this one!</item>
-    <item>May the Force be with You!</item>
-    <item>Do or Do Not - There is no Try</item>
+    <item>Kraften är Stark med Dig!</item>
+    <item>Må Kraften vara med Dig!</item>
+    <item>Gör eller Gör Inte - Det finns inget Försök!</item>
 </string-array>
 </resources>

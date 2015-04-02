@@ -3,6 +3,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="button_text">Next Quote</string>
+    <string name="random">Random Quotes</string>
     <string-array name="quotes">
         <item>The Force is Strong with this one!</item>
         <item>May the Force be with You!</item>

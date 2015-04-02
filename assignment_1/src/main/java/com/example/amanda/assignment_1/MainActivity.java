@@ -25,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
 //Send to logcat
         Log.i("MyAPP", "Button Pressed");
         TextView t1 = (TextView) findViewById(R.id.showQuote);
-        TextView t2 = (TextView) findViewById(R.id.showQuote);  
+        TextView t2 = (TextView) findViewById(R.id.showQuote);
 
 //First, clear the textViews
         t1.setText(null);
