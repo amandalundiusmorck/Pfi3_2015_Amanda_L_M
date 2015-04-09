@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">assignment_2</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
 <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titleSkanetrafiken">Skånetrafiken</string>
+    <string name="buttonReseplaneraren">Reseplanerare</string>
+    <string name="buttonTidtabeller">Tidtabeller</string>
+    <string name="buttonHallplatssok">Hållplatssök</string>
+    <string name="buttonBiljetter">Biljetter</string>
+    <string name="titleReseplaneraren">Reseplaneraren</string>
+    <string name="textFran">Från:</string>
+    <string name="textTill">Till:</string>
+    <string name="textTidDatum">Tid/Datum</string>
+    <string name="textJustNu">Just nu</string>
+    <string name="textTrafikslag">Trafikslag</string>
+    <string name="button2Redigera">Redigera</string>
+    <string name="button3Sok">Sök</string>
+    <string name="textFavoritresor">Favoritresor</string>
+    <string name="textBevakningar">Bevakningar</string>
 </resources>

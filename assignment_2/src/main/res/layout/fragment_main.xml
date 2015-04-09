@@ -16,7 +16,7 @@
         android:background="#ffff121a"
         android:textColor="#ffffffff"
         android:padding="15dp"
-        android:text="Skånetrafiken"
+        android:text="@string/titleSkanetrafiken"
         android:textSize="@dimen/abc_action_bar_progress_bar_size" />
 
     <LinearLayout
@@ -95,7 +95,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Reseplanerare"
+                    android:text="@string/buttonReseplaneraren"
                     android:id="@+id/textView5"
                     android:layout_weight="1"
                     android:layout_gravity="center_vertical|top"
@@ -105,7 +105,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Tidtabeller"
+                    android:text="@string/buttonTidtabeller"
                     android:id="@+id/textView3"
                     android:layout_weight="1"
                     android:layout_gravity="center_vertical|top"
@@ -150,7 +150,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Hållplatssök"
+                    android:text="@string/buttonHallplatssok"
                     android:id="@+id/textView4"
                     android:gravity="center_horizontal"
                     android:layout_weight="1" />
@@ -159,7 +159,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Biljetter"
+                    android:text="@string/buttonBiljetter"
                     android:id="@+id/textView"
                     android:gravity="center_horizontal"
                     android:layout_weight="1"
