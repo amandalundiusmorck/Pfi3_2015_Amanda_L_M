@@ -1,9 +1,31 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.amanda.assignment_2.fragment_planner">
+    tools:context="com.example.amanda.assignment_2.fragment_planner"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/title_view_resa"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffff121a"
+        android:textColor="#ffffffff"
+        android:padding="15dp"
+        android:text="Reseplaneraren"
+        android:textSize="@dimen/abc_action_bar_progress_bar_size" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_shuffle"
+        android:layout_marginTop="-65dip"
+        android:layout_marginRight="-150dip"
+        android:background="@drawable/icon_shuffle"/>
 
 
-</FrameLayout>
+</LinearLayout>
