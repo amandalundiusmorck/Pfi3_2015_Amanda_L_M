@@ -27,5 +27,172 @@
         android:layout_marginRight="-150dip"
         android:background="@drawable/icon_shuffle"/>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="-20dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Från:"
+            android:id="@+id/textView2"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Till:"
+            android:id="@+id/textView6"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/textView2"
+            android:layout_toStartOf="@+id/editText2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_marginRight="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tid/Datum"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:paddingTop="30dp"
+            android:paddingLeft="20dp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Just nu"
+            android:id="@+id/textView8"
+            android:textColor="@android:color/black"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="20dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redigera"
+            android:id="@+id/button"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="7dip"
+            android:layout_marginRight="15dip"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ankomst"
+            android:id="@+id/radioButton"
+            android:layout_below="@+id/button"
+            android:layout_alignEnd="@+id/textView7" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avgång"
+            android:id="@+id/radioButton2"
+            android:layout_below="@+id/textView8"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Trafikslag"
+            android:id="@+id/textView9"
+            android:layout_below="@+id/radioButton"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redigera"
+            android:id="@+id/button2"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_alignEnd="@+id/button"
+            android:layout_marginTop="7dip"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sök"
+            android:id="@+id/button3"
+            android:layout_marginTop="37dp"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Favoritresor"
+            android:id="@+id/textView10"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:layout_above="@+id/textView13"
+            android:layout_marginBottom="7dip"
+            android:layout_alignParentStart="true"
+            android:background="#ffff121a"
+            android:textSize="@dimen/Favoritresor3" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Bevakningar"
+            android:id="@+id/textView13"
+            android:linksClickable="true"
+            android:background="#ffff121a"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/Favoritresor3"
+            android:textColor="#ffffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
 
 </LinearLayout>
