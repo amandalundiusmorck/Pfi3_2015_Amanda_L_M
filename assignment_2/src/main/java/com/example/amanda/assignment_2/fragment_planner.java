@@ -2,16 +2,18 @@ package com.example.amanda.assignment_2;
 
 
 import android.os.Bundle;
-import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.Fragment;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class fragment_planner extends Fragment {
+public class fragment_planner extends Fragment implements View.OnClickListener {
 
 
     public fragment_planner() {
@@ -26,5 +28,8 @@ public class fragment_planner extends Fragment {
         return inflater.inflate(R.layout.fragment_fragment_planner, container, false);
     }
 
+    @Override
+    public void onClick(View v) {
 
+    }
 }
