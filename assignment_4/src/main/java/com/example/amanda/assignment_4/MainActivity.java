@@ -1,6 +1,8 @@
 package com.example.amanda.assignment_4;
 
 import android.support.v7.app.ActionBarActivity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -18,9 +20,11 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
+            getFragmentManager().beginTransaction()
+                    .replace(R.id.container, new HomeFragment())
                     .commit();
         }
     }
@@ -43,6 +47,12 @@ public class MainActivity extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+
+        if(id == R.id.info_button){
+            FragmentManager fn = getFragmentManager();
+            PopupFragment pf = new PopupFragment();
+            pf.show(fn, "PopUp");
         }
 
         return super.onOptionsItemSelected(item);
