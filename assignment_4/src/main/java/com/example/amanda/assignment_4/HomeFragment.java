@@ -16,7 +16,7 @@ import java.util.ArrayList;
 /**
  * Created by Amanda on 2015-04-23.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements AdapterView.OnItemClickListener{
     public static ArrayList<Planet> planets = new ArrayList<Planet>();
 
     @Override
@@ -52,27 +52,26 @@ public class HomeFragment extends Fragment {
 
         gridview.setAdapter(new ImageAdapter(getActivity(), planets));
 
-        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View v,
-                                    int position, long id) {
-
-                InfoFragment iF = new InfoFragment();
-
-                Bundle bundle = new Bundle();
-                bundle.putSerializable("planet",planets.get(position));
-                iF.setArguments(bundle);
-
-                FragmentManager fm = getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.container, iF);
-                ft.addToBackStack(null);
-                ft.commit();
-
-            }
-
-        });
+        gridview.setOnItemClickListener(this);
         return v;
+
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View v,
+                            int position, long id) {
+
+        InfoFragment iF = new InfoFragment();
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("planet",planets.get(position));
+        iF.setArguments(bundle);
+
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.container, iF);
+        ft.addToBackStack(null);
+        ft.commit();
 
     }
 }
